@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <br>
+    <h2 class="center"> Calculated Time </h2>
+    <br>
+    <div class="outcontainer">
+        <table class="center">
+            <tr>
+                <th style="width: 50%;">Playback Speed</th>
+                <th style="width: 50%;">Playtime</th>
+            </tr>
+            <tr>
+                <td>Normal (1x)</td>
+                <td>{{ NC_PL }}</td>
+            </tr>
+            <tr>
+                <td>1.25x</td>
+                <td>{{ x125_PL }}</td>
+            </tr>
+            <tr>
+                <td>1.5x</td>
+                <td>{{ x15_PL }}</td>
+            </tr>
+            <tr>
+                <td>1.75x</td>
+                <td>{{ x175_PL }}</td>
+            </tr>
+            <tr>
+                <td>2x</td>
+                <td>{{ x2_PL }}</td>
+            </tr>
+        </table>
+    </div>
+
+    <form action='/' method='get'>
+        <input type="submit" name="submit" value="Back Home" id="Submit">
+    </form>
+    <br>
+    <p class="center" style="font-size: 14px;"> **advertisement timings not included </p>
+{% endblock %}

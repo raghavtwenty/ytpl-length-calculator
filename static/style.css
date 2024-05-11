@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.center {
+    text-align: center;
+    font-size: 24px;
+}
+
+
+.outcontainer {
+    margin: 10px auto 10px;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 100px auto 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ff4500;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+.header {
+    margin: 0 auto;
+    color: #000000;
+}
+
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.center th, table.center td {
+    text-align: center;
+    padding: 10px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ff7043;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+
+
+input[type="text"]:focus {
+    border-color: #ff4500;
+    outline: none;
+}
+
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+
+input[type="submit"]:hover {
+    background-color: #ff5722;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}

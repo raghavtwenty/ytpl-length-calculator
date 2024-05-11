@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block body %}
+	<form action='/video_ask' method = 'post'>
+		<br>
+		<h2> Enter the Youtube playlist link below <h2>
+			<br>
+		<input type="text", name="ytpl_link", autofocus
+				placeholder= "Link here ...", id="ytpl_link">
+		<br><br>
+		<input type="submit", name="submit", placeholder="Submit"
+				value="Next", id="Submit">
+	</form>
+{% endblock %}

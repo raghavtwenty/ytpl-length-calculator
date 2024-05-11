@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block body %}
+		<br>
+	<h2> The playlist you have entered contains {{ VIDEO_COUNT }} videos </h2>
+			<br>
+    <h3> Choose your video range </h3>
+
+	<form action='/calculated_view' method = 'post'>
+		Start video number :
+		<input type="text", name="start_video", autofocus
+				placeholder= "Interger only", id="start_video">
+		(Min : 1)
+		<br><br>
+
+		End video number :
+        <input type="text", name="end_video", autofocus
+				placeholder= "Interger only", id="end_video">
+		(Max : {{VIDEO_COUNT}})
+        <br><br>
+		<input type="submit", name="submit", placeholder="Submit"
+				value="Calculate", id="Submit">
+	</form>
+{% endblock %}
